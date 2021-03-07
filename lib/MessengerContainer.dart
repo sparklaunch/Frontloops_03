@@ -14,6 +14,7 @@ class MessengerContainer extends StatelessWidget {
         width: kContainerWidth,
         margin: EdgeInsets.only(top: kContainerTopMargin),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             MessengerTitle(),
             MessengerBody(),
