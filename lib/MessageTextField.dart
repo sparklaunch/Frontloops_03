@@ -2,6 +2,9 @@ import "package:flutter/material.dart";
 
 import "./constants.dart";
 
+const double sendFontSize = 20.0;
+const double sendLetterSpacing = 1.0;
+
 class MessageTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,10 +20,10 @@ class MessageTextField extends StatelessWidget {
         Text(
           "SEND",
           style: TextStyle(
-            fontSize: 20.0,
+            fontSize: sendFontSize,
             color: kMessengerTitleColor,
             fontWeight: FontWeight.bold,
-            letterSpacing: 1.0,
+            letterSpacing: sendLetterSpacing,
           ),
         ),
       ],

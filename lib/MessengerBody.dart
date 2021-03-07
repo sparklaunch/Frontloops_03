@@ -7,7 +7,8 @@ import "./MessageBrain.dart";
 import "./MessageBox.dart";
 import "./MessageTextField.dart";
 
-MessageBrain messageBrain = MessageBrain();
+final MessageBrain messageBrain = MessageBrain();
+const double dividerThickness = 2.0;
 
 class MessengerBody extends StatelessWidget {
   @override
@@ -30,7 +31,7 @@ class MessengerBody extends StatelessWidget {
           ),
           Divider(
             color: kDateDividerColor,
-            thickness: 2.0,
+            thickness: dividerThickness,
           ),
           MessageTextField(),
         ],

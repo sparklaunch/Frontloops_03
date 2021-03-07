@@ -6,6 +6,13 @@ const Color yourMessageBoxColor = Color.fromRGBO(240, 240, 240, 1);
 const Color errorMessageBoxColor = Color.fromRGBO(254, 186, 186, 1);
 const Color timeMarkerColor = Color.fromRGBO(164, 164, 164, 1);
 
+const double timeMarkerFontSize = 18.0;
+const double textFontSize = 16.0;
+const double gapBetweenTextAndContainer = 8.0;
+const double messageBoxBorderRadius = 8.0;
+const double messageBoxPadding = 16.0;
+const double bottomMargin = 16.0;
+
 class MessageBox extends StatelessWidget {
   final Message message;
   MessageBox({this.message});
@@ -32,26 +39,26 @@ class MessageBox extends StatelessWidget {
         Text(
           "${this.message.getDateTime().hour}:$customMinute",
           style: TextStyle(
-            fontSize: 18.0,
+            fontSize: timeMarkerFontSize,
             color: timeMarkerColor,
             fontWeight: FontWeight.w500,
             letterSpacing: -1,
           ),
         ),
         SizedBox(
-          height: 8.0,
+          height: gapBetweenTextAndContainer,
         ),
         Container(
           decoration: BoxDecoration(
             color: messageBoxColor,
-            borderRadius: BorderRadius.circular(8.0),
+            borderRadius: BorderRadius.circular(messageBoxBorderRadius),
           ),
           child: Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(messageBoxPadding),
             child: Text(
               this.message.getText(),
               style: TextStyle(
-                fontSize: 16.0,
+                fontSize: textFontSize,
                 fontWeight: FontWeight.w500,
                 letterSpacing: -1.0,
               ),
@@ -59,7 +66,7 @@ class MessageBox extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 16.0,
+          height: bottomMargin,
         ),
       ],
     );

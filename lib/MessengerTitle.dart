@@ -1,6 +1,8 @@
 import "package:flutter/material.dart";
 import 'package:frontloops_03/constants.dart';
 
+const double messengerTitleOffset = -8.0;
+
 class MessengerTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class MessengerTitle extends StatelessWidget {
                 children: [
                   WidgetSpan(
                     child: Transform.translate(
-                      offset: Offset(0, -8),
+                      offset: Offset(0, messengerTitleOffset),
                       child: Icon(
                         Icons.circle,
                         size: kMessengerTitleIconSize,

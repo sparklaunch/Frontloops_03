@@ -2,6 +2,12 @@ import "package:flutter/material.dart";
 
 import "./constants.dart";
 
+const double dividerThickness = 2.0;
+const double textOffset = -18.0;
+const double horizontalMargin = 10.0;
+const double textFontSize = 18.0;
+const double textLetterSpacing = -1.0;
+
 class DateDivider extends StatelessWidget {
   final String text;
   DateDivider({this.text});
@@ -10,23 +16,23 @@ class DateDivider extends StatelessWidget {
     return Column(
       children: [
         Divider(
-          thickness: 2.0,
+          thickness: dividerThickness,
           color: kDateDividerColor,
         ),
         Transform.translate(
-          offset: Offset(0, -18),
+          offset: Offset(0, textOffset),
           child: Container(
             color: Colors.white,
             padding: EdgeInsets.symmetric(
-              horizontal: 10.0,
+              horizontal: horizontalMargin,
             ),
             child: Text(
               this.text,
               style: TextStyle(
-                fontSize: 18.0,
+                fontSize: textFontSize,
                 color: kDateDividerColor,
                 fontWeight: FontWeight.bold,
-                letterSpacing: -1.0,
+                letterSpacing: textLetterSpacing,
               ),
             ),
           ),
