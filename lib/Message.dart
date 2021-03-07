@@ -20,4 +20,19 @@ class Message {
     this._author = author;
     this._messageStatus = messageStatus;
   }
+  String getText() {
+    return this._text;
+  }
+
+  DateTime getDateTime() {
+    return this._date;
+  }
+
+  Author getAuthor() {
+    return this._author;
+  }
+
+  MessageStatus getMessageStatus() {
+    return this._messageStatus;
+  }
 }
