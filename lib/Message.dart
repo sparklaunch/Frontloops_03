@@ -1,3 +1,5 @@
+import "package:flutter/foundation.dart";
+
 enum Author { you, me }
 
 enum MessageStatus { success, error }
@@ -8,10 +10,10 @@ class Message {
   Author _author;
   MessageStatus _messageStatus;
   Message({
-    String text,
-    DateTime date,
-    Author author,
-    MessageStatus messageStatus,
+    @required String text,
+    @required DateTime date,
+    @required Author author,
+    @required MessageStatus messageStatus,
   }) {
     this._text = text;
     this._date = date;
