@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 
 import "./MessengerTitle.dart";
+import "./MessengerBody.dart";
 
 import "./constants.dart";
 
@@ -15,6 +16,7 @@ class MessengerContainer extends StatelessWidget {
         child: Column(
           children: [
             MessengerTitle(),
+            MessengerBody(),
           ],
         ),
       ),
