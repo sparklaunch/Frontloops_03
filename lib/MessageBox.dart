@@ -53,6 +53,7 @@ class MessageBox extends StatelessWidget {
               style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.w500,
+                letterSpacing: -1.0,
               ),
             ),
           ),

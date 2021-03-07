@@ -15,7 +15,6 @@ const double kMessengerFontSize = 20.0;
 const double kMessengerLetterSpacing = 1.0;
 const double kMessengerTitleIconSize = 8.0;
 const double kMessengerTitleHeight = 80.0;
-const double kContainerTopMargin = 50.0;
 const double kContainerWidth = 350.0;
 const double kMessengerBodyPadding = 20.0;
 
